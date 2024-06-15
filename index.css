@@ -4,7 +4,7 @@
 .head{
     display: flex;
     justify-content: space-between;
-    border: 1px solid gray;
+    border: 1px solid rgb(189, 182, 182);
 }
 .logo{
    /* height: 200px; */
@@ -27,8 +27,43 @@
 .search{
     padding: 10px;
 }
-.restaurant-cards{
-    width:200px;
-    height: 300px;
-    border: 1px solid rosybrown ;
+
+.res-card{
+    display: flex;
+    margin: 4px;
+    flex-wrap: wrap;
 }
+
+.restaurant-cards:hover{
+    cursor:pointer;
+}
+.restaurant-cards{
+     width:240px;
+     /* height: 300px;  */
+    border: 2px solid rgb(52, 224, 250) ;
+    border-radius: 3px;
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content:space-between;
+}
+
+.restaurant-cards:hover{
+    /* transform:translateY(1px); */
+    border: 2px solid rgb(248, 99, 12);
+    transition: .8s ease ;
+    transform: translate(1.2px, -2px);
+    /* margin: 2px;
+    padding: 1px; */
+   
+}
+.res-logo{
+     width:95%;
+     padding: 4px;
+     height:40%
+}
+.res-logo:hover{
+    transform: translate(.5px,-2px);
+}
+    /* border: 1px solid rgb(234, 162, 53); */
