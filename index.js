@@ -1676,6 +1676,8 @@ const resList = [
  
 ];
 
+
+
 const RestaurantCards = (props) => {
   const { resData } = props;
   const {
