@@ -1,5 +1,6 @@
 *{
     margin: 1.2px;
+    /* background-color: #FFF5E1; */
 }
 .head{
     display: flex;
@@ -34,13 +35,24 @@
     flex-wrap: wrap;
 }
 
+.restaurant-cards{
+    background-color:#faebcc;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color:#ee4f4f; 
+    text-transform:capitalize;
+    text-shadow: .5px  1px #0C1844;
+    /* text-decoration: wavy; */
+
+
+}
 .restaurant-cards:hover{
     cursor:pointer;
 }
 .restaurant-cards{
      width:240px;
      /* height: 300px;  */
-    border: 2px solid rgb(52, 224, 250) ;
+    border: 2px solid #0C1844;
     border-radius: 3px;
     /* flex-wrap: wrap; */
     display: flex;
@@ -51,7 +63,7 @@
 
 .restaurant-cards:hover{
     /* transform:translateY(1px); */
-    border: 2px solid rgb(248, 99, 12);
+    border: 2px solid #453F78;
     transition: .8s ease ;
     transform: translate(1.2px, -2px);
     /* margin: 2px;

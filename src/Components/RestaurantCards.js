@@ -11,7 +11,7 @@ const RestaurantCards = (props) => {
   } = resData?.data;
 
   return (
-    <div className="restaurant-cards" style={{ backgroundColor: "#f0f0f0f0" }}>
+    <div className="restaurant-cards">
       <img
         className="res-logo"
         src={CARD_URL
