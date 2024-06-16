@@ -9,7 +9,6 @@ const RestaurantCards = (props) => {
     cloudinaryImageId,
     costForTwo,
   } = resData?.data;
-
   return (
     <div className="restaurant-cards">
       <img

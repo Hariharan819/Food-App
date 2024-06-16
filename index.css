@@ -1,6 +1,5 @@
 *{
     margin: 1.2px;
-    /* background-color: #FFF5E1; */
 }
 .head{
     display: flex;
@@ -8,7 +7,6 @@
     border: 1px solid rgb(189, 182, 182);
 }
 .logo{
-   /* height: 200px; */
    width: 110px; 
      mix-blend-mode:color-burn;
 }
@@ -19,7 +17,6 @@
     display: flex; 
     list-style-type: none;
     font-size: 20px;
-   
 }
 .nav_items >ul >li{
     padding: 10px;
@@ -28,13 +25,11 @@
 .search{
     padding: 10px;
 }
-
 .res-card{
     display: flex;
     margin: 4px;
     flex-wrap: wrap;
 }
-
 .restaurant-cards{
     background-color:#faebcc;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -42,15 +37,12 @@
     color:#ee4f4f; 
     text-transform:capitalize;
     text-shadow: .5px  1px #0C1844;
-    /* text-decoration: wavy; */
-
-
 }
 .restaurant-cards:hover{
     cursor:pointer;
 }
 .restaurant-cards{
-     width:240px;
+     width:244.25px;
      /* height: 300px;  */
     border: 2px solid #0C1844;
     border-radius: 3px;
@@ -60,7 +52,6 @@
   /* flex-wrap: wrap; */
   justify-content:space-between;
 }
-
 .restaurant-cards:hover{
     /* transform:translateY(1px); */
     border: 2px solid #453F78;
@@ -68,7 +59,6 @@
     transform: translate(1.2px, -2px);
     /* margin: 2px;
     padding: 1px; */
-   
 }
 .res-logo{
      width:95%;
@@ -78,4 +68,3 @@
 .res-logo:hover{
     transform: translate(.5px,-2px);
 }
-    /* border: 1px solid rgb(234, 162, 53); */
