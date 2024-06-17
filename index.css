@@ -68,3 +68,12 @@
 .res-logo:hover{
     transform: translate(.5px,-2px);
 }
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    width: 244.25px;
+    height: 400px; border-radius: 3px;
+    background-color: #dcdcdc;
+}

@@ -1,29 +1,20 @@
 import { CARD_URL } from "../utilis/constant";
 const RestaurantCards = (props) => {
   const { resData } = props;
-  const {
-    name,
-    cuisines,
-    avgRating,
-    deliveryTime,
-    cloudinaryImageId,
-    costForTwo,
-  } = resData?.data;
+  const { name, cuisines, avgRating, sla, cloudinaryImageId, costForTwo } =
+    resData?.info;
   return (
     <div className="restaurant-cards">
       <img
         className="res-logo"
-        src={CARD_URL
-           +
-          cloudinaryImageId
-        }
+        src={CARD_URL + cloudinaryImageId}
         alt="network issuse"
       />
       <h4>{name}</h4>
       <h4>{cuisines.join(",")}</h4>
       <h4>{avgRating}</h4>
-      <h4>₹{costForTwo / 100}FOR TWO</h4>
-      <h4>{deliveryTime} Minutes</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{sla?.slaString}</h4>
     </div>
   );
 };
