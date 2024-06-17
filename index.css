@@ -33,9 +33,9 @@
 .restaurant-cards{
     background-color:#faebcc;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: 13.9px;
     color:#ee4f4f; 
-    text-transform:capitalize;
+    text-transform:capitalize;  
     text-shadow: .5px  1px #0C1844;
 }
 .restaurant-cards:hover{
@@ -76,4 +76,34 @@
     width: 244.25px;
     height: 400px; border-radius: 3px;
     background-color: #dcdcdc;
+}
+.filter-btn{
+    cursor: pointer;
+    padding: auto;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    height: 30px;
+    /* font-weight: 300; */
+    background-color: rgb(57, 113, 162);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.filter-btn:hover{
+    color:rgb(255, 106, 0);
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+    border: 2px solid rgb(34, 34, 34);
+}
+.btn{
+    display: flex;
+}
+.btn-search{
+    height: 30px;
+    width: 70px;
+    color: rgb(67, 36, 192);
+    background-color: whitesmoke;
+}
+.input-search{
+    height: 25px;
+
 }
