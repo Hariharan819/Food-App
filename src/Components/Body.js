@@ -1,23 +1,24 @@
 import RestaurantCards from "./RestaurantCards";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Swiggy_data } from "../utilis/constant";
 const Body = () => {
   const [LiofRestaurant, setLiofRestaurant] = useState([]);
-  const [FilteredRestaurant,setFilteredRestaurant]=useState([]);
+  const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setsearchText] = useState("");
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.2507377&lng=78.1655097&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    const data = await fetch(Swiggy_data);
     const json = await data.json();
     setLiofRestaurant(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilteredRestaurant( json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setFilteredRestaurant(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
   if (LiofRestaurant.length === 0) {
@@ -51,10 +52,10 @@ const Body = () => {
         <button
           className="filter-btn"
           onClick={() => {
-            const filteredData = LiofRestaurant.filter(
+            const filteredData = FilteredRestaurant.filter(
               (res) => res.info.avgRating > 4
             );
-            setLiofRestaurant(filteredData);
+            setFilteredRestaurant(filteredData);
           }}
         >
           Top Rated Restaurant
