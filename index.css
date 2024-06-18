@@ -17,6 +17,9 @@
     display: flex; 
     list-style-type: none;
     font-size: 20px;
+    
+    
+    
 }
 .nav_items >ul >li{
     padding: 10px;
@@ -24,10 +27,11 @@
 }
 .search{
     padding: 10px;
+    
 }
 .res-card{
     display: flex;
-    margin: 4px;
+    margin: 10px 180px ;
     flex-wrap: wrap;
 }
 .restaurant-cards{
@@ -42,7 +46,7 @@
     cursor:pointer;
 }
 .restaurant-cards{
-     width:244.25px;
+     width:275px;
      /* height: 300px;  */
     border: 2px solid #0C1844;
     border-radius: 3px;
@@ -80,6 +84,7 @@
 .filter-btn{
     cursor: pointer;
     padding: auto;
+     margin:10px;
     border: none;
     color: rgb(255, 255, 255);
     border-radius: 2px;
@@ -91,19 +96,23 @@
 .filter-btn:hover{
     color:rgb(255, 106, 0);
     background-color: rgb(255, 255, 255);
-    transition: 0.8s;
+    transition: 0.8s;   
     border: 2px solid rgb(34, 34, 34);
 }
 .btn{
-    display: flex;
+    display: flex; justify-content: space-around;
 }
 .btn-search{
     height: 30px;
     width: 70px;
+    margin:0px 10px;
     color: rgb(67, 36, 192);
     background-color: whitesmoke;
 }
 .input-search{
     height: 25px;
 
+}
+.search-btn{
+    margin: 10px;
 }

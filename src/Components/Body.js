@@ -11,21 +11,31 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(Swiggy_data);
+
+    const data = await fetch(
+      "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.4614624&lng=78.1854772&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING ",
+      {
+        headers: {
+          "x-cors-api-key": "temp_d989950644d6b585bfbe5e20a1c5f0fa",
+        },
+      }
+    );
+    // const data = await fetch(Swiggy_data);
     const json = await data.json();
+
     setLiofRestaurant(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurant(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    // console.log(json)
+    // console.log(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0].info.id);   //418276
   };
 
-  if (LiofRestaurant.length === 0) {
-    return <Shimmer />;
-  }
-
-  return (
+  return LiofRestaurant.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="btn">
         <div className="search-btn">
