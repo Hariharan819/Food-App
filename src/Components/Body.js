@@ -2,6 +2,7 @@ import RestaurantCards from "./RestaurantCards";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Swiggy_data } from "../utilis/constant";
+import { Link } from "react-router-dom";
 const Body = () => {
   const [LiofRestaurant, setLiofRestaurant] = useState([]);
   const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
@@ -64,7 +65,8 @@ const Body = () => {
       </div>
       <div className="res-card">
         {FilteredRestaurant.map((restaurants) => (
-          <RestaurantCards key={restaurants?.info?.id} resData={restaurants} />
+          // <RestaurantCards key={restaurants?.info?.id} resData={restaurants} />
+            <Link  key={restaurants?.info?.id}  style={{ textDecoration: 'none' }} to={"/restaurants/" + restaurants?.info?.id}> <RestaurantCards resData={restaurants} /></Link> 
         ))}
       </div>
     </div>

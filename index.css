@@ -12,6 +12,7 @@
 }
 .nav_items{
     padding: 18px 20px;
+    color: black;
 }
 .nav_items > ul {
     display: flex; 
@@ -19,11 +20,11 @@
     font-size: 20px;
     
     
-    
 }
 .nav_items >ul >li{
     padding: 10px;
     margin: 10px;
+    
 }
 .search{
     padding: 10px;
@@ -47,6 +48,7 @@
 }
 .restaurant-cards{
      width:275px;
+     height: 400.2px;
      /* height: 300px;  */
     border: 2px solid #0C1844;
     border-radius: 3px;
@@ -66,8 +68,8 @@
 }
 .res-logo{
      width:95%;
-     padding: 4px;
-     height:40%
+     padding:6px;
+     height:40%;
 }
 .res-logo:hover{
     transform: translate(.5px,-2px);
@@ -75,17 +77,19 @@
 .shimmer-container{
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 180px ;
 }
 .shimmer-card{
-    width: 244.25px;
-    height: 400px; border-radius: 3px;
+    width:275px;
+    height: 400.2px;
+     border-radius: 3px;
     background-color: #dcdcdc;
 }
 .filter-btn{
     cursor: pointer;
     padding: auto;
      margin:10px;
-    border: none;
+    border: 2px solid  rgb(247, 5, 5);
     color: rgb(255, 255, 255);
     border-radius: 2px;
     height: 30px;
@@ -96,7 +100,7 @@
 .filter-btn:hover{
     color:rgb(255, 106, 0);
     background-color: rgb(255, 255, 255);
-    transition: 0.8s;   
+    transition: 0.8s linear;   
     border: 2px solid rgb(34, 34, 34);
 }
 .btn{
@@ -115,4 +119,44 @@
 }
 .search-btn{
     margin: 10px;
+}
+.menu-ul{
+    list-style:square;
+}
+.linkstyle{
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.linkstyle:hover{
+    color: rgb(255, 115, 0);
+}
+.nameofmenu{
+    font-size: 35px;
+    margin: 20px 10px;
+    color: cadetblue;
+    font-weight: 300;
+    text-shadow: 2px 2px greenyellow;
+
+}
+.priceofmenu{
+    margin: 15px 15px;
+    color: #ee4f4f;
+    font-weight: 800;
+    font-size: 20px;
+}
+.insidemenu{
+    color:darkmagenta;
+    margin: 10px 17px;
+}
+.menu-ul{
+    color:rgb(222, 174, 111);
+    font-size:17px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: .5px .5px  rgb(52, 52, 52);
+
 }

@@ -9,14 +9,20 @@ const Header = () => {
       <div className="nav_items">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"  className="linkstyle">
+              Home
+            </Link>
           </li>
           <li>
-          <Link to="/About">About Us</Link>
+            <Link to="/About"  className="linkstyle" >
+              About Us
+            </Link>
           </li>
           <li>
-          <Link to="/contactus"> Contact Us</Link>
-
+            <Link to="/contactus"  className="linkstyle">
+              {" "}
+              Contact Us
+            </Link>
           </li>
           <li>Cart</li>
         </ul>
