@@ -21,8 +21,7 @@ const Body = () => {
     setFilteredRestaurant(
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    // console.log(json)
-    // console.log(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0].info.id);   //418276
+ 
   };
 
   return LiofRestaurant.length === 0 ? (
