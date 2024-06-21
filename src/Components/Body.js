@@ -21,7 +21,6 @@ const Body = () => {
     setFilteredRestaurant(
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
- 
   };
 
   return LiofRestaurant.length === 0 ? (
@@ -65,7 +64,14 @@ const Body = () => {
       <div className="res-card">
         {FilteredRestaurant.map((restaurants) => (
           // <RestaurantCards key={restaurants?.info?.id} resData={restaurants} />
-            <Link  key={restaurants?.info?.id}  style={{ textDecoration: 'none' }} to={"/restaurants/" + restaurants?.info?.id}> <RestaurantCards resData={restaurants} /></Link> 
+          <Link
+            key={restaurants?.info?.id}
+            style={{ textDecoration: "none" }}
+            to={"/restaurants/" + restaurants?.info?.id}
+          >
+            {" "}
+            <RestaurantCards resData={restaurants} />
+          </Link>
         ))}
       </div>
     </div>
@@ -73,7 +79,3 @@ const Body = () => {
 };
 
 export default Body;
-
-
-
-
