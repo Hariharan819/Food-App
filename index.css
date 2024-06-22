@@ -59,12 +59,9 @@
   justify-content:space-between;
 }
 .restaurant-cards:hover{
-    /* transform:translateY(1px); */
     border: 2px solid #453F78;
     transition: .8s ease ;
     transform: translate(1.2px, -2px);
-    /* margin: 2px;
-    padding: 1px; */
 }
 .res-logo{
      width:95%;
@@ -85,16 +82,16 @@
      border-radius: 3px;
     background-color: #dcdcdc;
 }
-.filter-btn{
+.filter-btn{ 
     cursor: pointer;
     padding: auto;
      margin:10px;
     border: 2px solid  rgb(247, 5, 5);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 2px;
     height: 30px;
     /* font-weight: 300; */
-    background-color: rgb(57, 113, 162);
+    background-color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 .filter-btn:hover{
@@ -110,7 +107,7 @@
     height: 30px;
     width: 70px;
     margin:0px 10px;
-    color: rgb(67, 36, 192);
+    color: rgb(0, 0, 0);
     background-color: whitesmoke;
 }
 .input-search{
@@ -161,12 +158,16 @@
 
 }
 .userdetails1{
+    height: 200px;
+    width: 600px;
+    /* margin: 50px 10px; */
+
     display: flex;
     flex-direction: column;
     border: 1px solid firebrick;
     margin: 10px 2px;
     padding: 4px;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     /* color: rgb(82, 202, 212); */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

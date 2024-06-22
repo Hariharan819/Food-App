@@ -20,12 +20,7 @@
 -address
 -Links
 -Address
+
 #
-    
 
-
-
-
- cors plugin:https://cors-anywhere.herokuapp.com/
-
-
+cors plugin:https://cors-anywhere.herokuapp.com/

@@ -9,17 +9,17 @@ const Header = () => {
       <div className="nav_items">
         <ul>
           <li>
-            <Link to="/"  className="linkstyle">
+            <Link to="/" className="linkstyle">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/About"  className="linkstyle" >
+            <Link to="/About" className="linkstyle">
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/contactus"  className="linkstyle">
+            <Link to="/contactus" className="linkstyle">
               {" "}
               Contact Us
             </Link>
