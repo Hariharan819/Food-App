@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Swiggy_data } from "../utilis/constant";
 import { Link } from "react-router-dom";
+import useonlinestatus from "../utilis/useonlinestatus";
+import useRestaurantcards from "../utilis/useRestaurantcards";
+
 const Body = () => {
   const [LiofRestaurant, setLiofRestaurant] = useState([]);
   const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
@@ -22,6 +25,12 @@ const Body = () => {
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
+  
+  // const LiofRestaurant=useRestaurantcards(); 
+  // const FilteredRestaurant=useRestaurantcards();
+  const onlinestatus = useonlinestatus();
+  if (onlinestatus == false)
+    return <h1>Please check your internet connection!!</h1>;
 
   return LiofRestaurant.length === 0 ? (
     <Shimmer />

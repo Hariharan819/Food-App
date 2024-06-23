@@ -1,6 +1,9 @@
 import { LOGO_URL } from "../utilis/constant";
 import { Link } from "react-router-dom";
+// import { useState } from "react";
+import useonlinestatus from "../utilis/useonlinestatus";
 const Header = () => {
+  const onlinestatus = useonlinestatus();
   return (
     <div className="head">
       <div className="img-container">
@@ -8,6 +11,7 @@ const Header = () => {
       </div>
       <div className="nav_items">
         <ul>
+          <li  className="linkstyle" >online Status:{onlinestatus ? "⚡" : "🛑"}</li>
           <li>
             <Link to="/" className="linkstyle">
               Home
