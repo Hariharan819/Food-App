@@ -5,7 +5,7 @@ import useonlinestatus from "../utilis/useonlinestatus";
 const Header = () => {
   const onlinestatus = useonlinestatus();
   return (
-    <div className="flex  bg-orange-50 items-center rounded-md m-2 shadow-md  justify-between">
+    <div className="flex  bg-orange-100 items-center rounded-md m-2 shadow-md  justify-between">
       <div className="w-28 rounded-md">
         <img className="logo" src={LOGO_URL} />
       </div>

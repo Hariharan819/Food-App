@@ -24,9 +24,12 @@ const Body = () => {
     setFilteredRestaurant(
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    // console.log(
+    //   json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // );
   };
-  
-  // const LiofRestaurant=useRestaurantcards(); 
+
+  // const LiofRestaurant=useRestaurantcards();
   // const FilteredRestaurant=useRestaurantcards();
   const onlinestatus = useonlinestatus();
   if (onlinestatus == false)
@@ -35,19 +38,19 @@ const Body = () => {
   return LiofRestaurant.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="body">
-      <div className="btn">
-        <div className="search-btn">
+    <div className="body m-2">
+      <div className=" flex m-1 p-2 justify-center">
+        <div className=" ">
           <input
             type="text"
-            className="input-search"
+            className="border border-solid border-rose-600 rounded-sm h-8 outline-none focus:border-lime-500"
             value={searchText}
             onChange={(e) => {
               setsearchText(e.target.value);
             }}
           />
           <button
-            className="btn-search"
+            className="mx-6 my-1 px-4 py-1 bg-yellow-200 rounded-md items-center shadow-sm hover:text-red-700"
             onClick={() => {
               FilteredList = LiofRestaurant.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -59,7 +62,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="filter-btn"
+          className="bg-pink-300 rounded-sm mx-28 my-1 px-4 py-1 shadow-md"
           onClick={() => {
             const filteredData = FilteredRestaurant.filter(
               (res) => res.info.avgRating > 4
@@ -70,7 +73,7 @@ const Body = () => {
           Top Rated Restaurant
         </button>
       </div>
-      <div className="res-card">
+      <div className="flex flex-wrap mx-[143px] ">
         {FilteredRestaurant.map((restaurants) => (
           // <RestaurantCards key={restaurants?.info?.id} resData={restaurants} />
           <Link
