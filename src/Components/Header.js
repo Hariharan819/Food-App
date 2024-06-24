@@ -5,30 +5,32 @@ import useonlinestatus from "../utilis/useonlinestatus";
 const Header = () => {
   const onlinestatus = useonlinestatus();
   return (
-    <div className="head">
-      <div className="img-container">
+    <div className="flex  bg-orange-50 items-center rounded-md m-2 shadow-md  justify-between">
+      <div className="w-28 rounded-md">
         <img className="logo" src={LOGO_URL} />
       </div>
-      <div className="nav_items">
-        <ul>
-          <li  className="linkstyle" >online Status:{onlinestatus ? "⚡" : "🛑"}</li>
+      <div>
+        <ul className="flex">
+          <li className="px-3 text-lg">
+            Online Status:{onlinestatus ? "⚡" : "🛑"}
+          </li>
           <li>
-            <Link to="/" className="linkstyle">
+            <Link to="/" className="px-4 text-lg hover:text-pink-900">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/About" className="linkstyle">
+            <Link to="/About" className="px-4 text-lg  hover:text-pink-900">
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/contactus" className="linkstyle">
+            <Link to="/contactus" className="px-4 text-lg  hover:text-pink-900">
               {" "}
               Contact Us
             </Link>
           </li>
-          <li>Cart</li>
+          <li className="px-5 text-lg  hover:text-pink-800">Cart</li>
         </ul>
       </div>
     </div>
