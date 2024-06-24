@@ -8,7 +8,7 @@ class Userclass extends React.Component {
     // };
   }
   render() {
-    const { name, location, Email,Mobile} = this.props;
+    const { name, location, Email, Mobile } = this.props;
     // const {count}=this.state;
     return (
       <div className="userdetails h-36 border border-solid border-amber-400 p-3 m-2 flex flex-col justify-between">

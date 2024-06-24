@@ -3,7 +3,7 @@ const Error = () => {
   const err = useRouteError();
   console.log(err);
   return (
-    <div>
+    <div className="flex flex-col justify-between items-center m-64 ">
       <h2>Oops❗❗❗</h2>
       <h2>Something Wrong❗❗❗</h2>
       <h2>

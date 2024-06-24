@@ -4,10 +4,10 @@ import Shimmer from "./Shimmer";
 import { Swiggy_data } from "../utilis/constant";
 import { Link } from "react-router-dom";
 import useonlinestatus from "../utilis/useonlinestatus";
-import useRestaurantcards from "../utilis/useRestaurantcards";
+// import useRestaurantcards from "../utilis/useRestaurantcards";
 
 const Body = () => {
-  const [LiofRestaurant, setLiofRestaurant] = useState([]);
+  const [LiofRestaurant, setLiofRestaurant] = useState(null);
   const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setsearchText] = useState("");
   useEffect(() => {
@@ -28,14 +28,14 @@ const Body = () => {
     //   json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     // );
   };
-
-  // const LiofRestaurant=useRestaurantcards();
-  // const FilteredRestaurant=useRestaurantcards();
   const onlinestatus = useonlinestatus();
   if (onlinestatus == false)
-    return <h1>Please check your internet connection!!</h1>;
-
-  return LiofRestaurant.length === 0 ? (
+    return (
+      <h1 className="font-mono text-2xl text-fuchsia-600">
+        Please check your internet connection❗❗❗
+      </h1>
+    );
+  return LiofRestaurant === null ? (
     <Shimmer />
   ) : (
     <div className="body m-2">
