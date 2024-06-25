@@ -1,16 +1,15 @@
-import RestaurantCards, {higherordercomponent} from "./RestaurantCards";
+import RestaurantCards, { higherordercomponent } from "./RestaurantCards";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Swiggy_data } from "../utilis/constant";
 import { Link } from "react-router-dom";
 import useonlinestatus from "../utilis/useonlinestatus";
 
-
 const Body = () => {
   const [LiofRestaurant, setLiofRestaurant] = useState(null);
   const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setsearchText] = useState("");
-  const highercompo=higherordercomponent(RestaurantCards);  //higher order function 
+  const highercompo = higherordercomponent(RestaurantCards); //higher order function
   useEffect(() => {
     fetchData();
   }, []);
@@ -26,8 +25,8 @@ const Body = () => {
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     console.log(
-     json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-     );
+      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
   const onlinestatus = useonlinestatus();
   if (onlinestatus == false)
