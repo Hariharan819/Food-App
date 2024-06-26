@@ -23,7 +23,7 @@ const RestaurantCards = (props) => {
 };
 
 //higher order component it takes component as input and return an component which is enhanced
-export  const higherordercomponent = () =>
+export const higherordercomponent = () =>
   // here the input component passed ex:RestaurantCard
   {
     //it also return component

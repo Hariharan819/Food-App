@@ -24,9 +24,9 @@ const Body = () => {
     setFilteredRestaurant(
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    console.log(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+    // console.log(
+    // json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // );
   };
   const onlinestatus = useonlinestatus();
   if (onlinestatus == false)
@@ -73,7 +73,7 @@ const Body = () => {
           Top Rated Restaurant
         </button>
       </div>
-      <div className="flex flex-wrap mx-[143px] ">
+      <div className="flex flex-wrap mx-[140px] ">
         {FilteredRestaurant.map((restaurants) => (
           // <RestaurantCards key={restaurants?.info?.id} resData={restaurants} />
           <Link
