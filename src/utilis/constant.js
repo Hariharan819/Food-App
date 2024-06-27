@@ -10,3 +10,4 @@ export const Menu_Api =
 
 //https://cors-anywhere.herokuapp.com/
 //https://cors-anywhere.herokuapp.com/
+// "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2024/3/20/73f795a6-1654-4740-bf16-ae0c69d56de6_5383cafb-8a56-476c-a224-0ec8d5d4682e.jpg"

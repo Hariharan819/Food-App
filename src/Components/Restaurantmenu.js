@@ -26,7 +26,7 @@ const Restaurantmenu = () => {
       </p>
       {category.map((categories) => (
         <Restaurantcategory
-          key={categories?.card?.card?.id}
+          key={categories?.card?.card?.title}
           categoryData={categories?.card?.card}
         />
       ))}
