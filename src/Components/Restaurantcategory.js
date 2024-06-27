@@ -2,10 +2,10 @@ import RestaurantmenuitemList from "./RestaurantmenuitemList";
 import { useState } from "react";
 const Restaurantcategory = ({ categoryData }) => {
   // console.log(categoryData);
-  const [showitem,setshowitem]=useState(false);
-  const clickfunc=()=>{
+  const [showitem, setshowitem] = useState(false);
+  const clickfunc = () => {
     setshowitem(!showitem);
-  }
+  };
   return (
     <div className="m-2 p-2 bg-gray-50 shadow-lg  rounded-md w-6/12 capitalize ">
       <div className="flex justify-between  cursor-pointer" onClick={clickfunc}>
@@ -15,7 +15,7 @@ const Restaurantcategory = ({ categoryData }) => {
         <span>⬇️</span>
       </div>
       <div className="">
-       {showitem && <RestaurantmenuitemList items={categoryData.itemCards} /> }
+        {showitem && <RestaurantmenuitemList items={categoryData.itemCards} />}
       </div>
     </div>
   );

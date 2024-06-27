@@ -52,7 +52,7 @@ const Body = () => {
           <button
             className="mx-6 my-1 px-4 py-1 bg-yellow-200 rounded-md items-center shadow-sm hover:text-red-700"
             onClick={() => {
-              FilteredList = LiofRestaurant.filter((res) =>
+              FilteredList = LiofRestaurant?.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
               setFilteredRestaurant(FilteredList);

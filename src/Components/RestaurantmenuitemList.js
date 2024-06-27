@@ -6,7 +6,7 @@ const RestaurantmenuitemList = ({ items }) => {
       {items.map((item) => (
         <div
           key={item.card.info.id}
-          className="border-b-2 border-gray-200 border-t-2  shadow-md rounded-md my-3 mx-1 p-2 h-32"
+          className="border-b-2 border-gray-200 border-t-2  shadow-md rounded-md my-3 mx-1 p-2 h-36"
         >
           <div className=" flex justify-between">
             <div>
@@ -24,10 +24,10 @@ const RestaurantmenuitemList = ({ items }) => {
             
           </div>
           <div>
-            <p className="text-wrap w-10/12 relative -top-16 ">
+            <p className="text-wrap w-10/12 relative -top-24 ">
               {item.card.info.description}
             </p>
-            <p className="text-wrap w-10/12 relative -top-14 ">Type : {item.card.info.itemAttribute.vegClassifier}</p>
+            <p className="text-wrap w-10/12 relative -top-20 ">Type : {item.card.info.itemAttribute.vegClassifier}</p>
           </div>
         </div>
       ))}
