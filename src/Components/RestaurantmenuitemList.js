@@ -1,6 +1,14 @@
+import { addItem } from "../ReduxUtilis/cartSlice";
 import { CARD_URL } from "../utilis/constant";
+import { useDispatch } from "react-redux";
+import { addItem } from "../ReduxUtilis/cartSlice";
 const RestaurantmenuitemList = ({ items }) => {
   // console.log(items);
+  const dispatch = useDispatch();
+  const cartfunction = (item) => {
+    //function called by onclick
+    dispatch(addItem(item));
+  };
   return (
     <div>
       {items.map((item) => (
@@ -14,20 +22,26 @@ const RestaurantmenuitemList = ({ items }) => {
               <span> - ₹{item.card.info.price / 100}</span>
             </div>
             <div>
-            <img
-              src={CARD_URL + item.card.info.imageId}
-              alt="imageId is not found in api data"
-              className="w-32 rounded-md h-24"
-            />
-            <button className="rounded-sm font-mono text-yellow-50 bg-zinc-800 w-16 relative -top-24  hover:text-amber-500">Add+</button>
+              <img
+                src={CARD_URL + item.card.info.imageId}
+                alt="imageId is not found in api data"
+                className="w-32 rounded-md h-24"
+              />
+              <button
+                className="rounded-sm font-mono text-yellow-50 bg-zinc-800 w-16 relative -top-24  hover:text-amber-500"
+                onClick={() => cartfunction(item)}
+              >
+                Add+
+              </button>
             </div>
-            
           </div>
           <div>
             <p className="text-wrap w-10/12 relative -top-24 ">
               {item.card.info.description}
             </p>
-            <p className="text-wrap w-10/12 relative -top-20 ">Type : {item.card.info.itemAttribute.vegClassifier}</p>
+            <p className="text-wrap w-10/12 relative -top-20 ">
+              Type : {item.card.info.itemAttribute.vegClassifier}
+            </p>
           </div>
         </div>
       ))}

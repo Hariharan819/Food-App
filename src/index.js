@@ -8,15 +8,20 @@ import Error from "./Components/Error";
 import { lazy, Suspense } from "react";
 import Restaurantmenu from "./Components/Restaurantmenu";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import appStore from "./ReduxUtilis/appStore";
+import Cartpage from "./Components/CartPage";
 
 const About = lazy(() => import("./Components/About"));
 
 const AppLayout = () => {
   return (
-    <div className="bg-zinc-50">
-      <Header />
-      <Outlet />
-    </div>
+    <Provider store={appStore}>
+      <div className="bg-zinc-50">
+        <Header />
+        <Outlet />
+      </div>
+    </Provider>
   );
 };
 const appRouter = createBrowserRouter([
@@ -44,6 +49,10 @@ const appRouter = createBrowserRouter([
         path: "/restaurants/:resId",
         element: <Restaurantmenu />,
       },
+      {
+        path:"/Cartpage",
+        element:<Cartpage/>
+      }
     ],
     errorElement: <Error />,
   },
