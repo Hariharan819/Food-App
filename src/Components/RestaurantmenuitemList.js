@@ -9,9 +9,12 @@ const RestaurantmenuitemList = ({ items }) => {
     //function called by onclick
     dispatch(addItem(item));
   };
+
+  // console.log(items.card.info.imageId);
   return (
     <div>
       {items.map((item) => (
+        
         <div
           key={item.card.info.id}
           className="border-b-2 border-gray-200 border-t-2  shadow-md rounded-md my-3 mx-1 p-2 h-36"

@@ -12,9 +12,9 @@ const Header = () => {
       </div>
       <div>
         <ul className="flex">
-          <li className="px-3 text-lg">
-            Online Status:{onlinestatus ? "⚡" : "🛑"}
-          </li>
+          {onlinestatus ? null : (
+            <li className="px-3 text-lg">Online Status: 🛑</li>
+          )}
           <li>
             <Link to="/" className="px-4 text-lg hover:text-pink-900">
               Home
