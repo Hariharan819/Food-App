@@ -3,6 +3,9 @@ export const LOGO_URL =
 export const CARD_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
+
+ export  const cart_logo="https://tse2.mm.bing.net/th?id=OIP.wk7nZErOy-KV02yVeOZLKQHaHa&pid=Api&P=0&h=180";
+
 export const Swiggy_data =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.4614624&lng=78.1854772&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 export const Menu_Api =

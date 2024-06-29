@@ -33,7 +33,7 @@ const Header = () => {
           </li>
           <li className="px-4 text-lg  hover:text-pink-800">
             <Link to="/cartpage" className="px-4 text-lg  hover:text-pink-900">
-              Cart -{storevalue?.length}
+              Cart - {storevalue?.length}
             </Link>
           </li>
         </ul>
