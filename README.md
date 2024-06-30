@@ -1,23 +1,39 @@
-# AppLayout
+# cors
 
-# Header
+plugin:https://cors-anywhere.herokuapp.com/
 
--Logo
--Nav-Items
--Home
--About
--cart
+- for api call to avoid cors Error
 
-# Body
+# Hooks
 
--Search
--restaurantContainer
--restaurantCards
+-usestate
+-useEffect
+-useparam
+-useselector
+-useDispatch
 
-# Fotter
+# custom Hooks
 
--copyright
--address
--Links
--Address
-#cors plugin:https://cors-anywhere.herokuapp.com/
+-bulinding custom hook for showing menu card
+
+# API'S
+
+-Fetching data from swiggyy api and showing cards in the UI
+
+- Each card has separate menu page which is done by Fetching data from Swiggy API
+
+# Routing using react-router-dom
+
+-navigate to Home Aboutus and so on
+
+# using Shimmer skelton
+
+- render when the data fetching in api
+
+# Tailwind css
+
+-Styling UI using Tailwinid
+
+# Using Redux
+
+- cart add and clear
