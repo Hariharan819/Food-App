@@ -1,6 +1,6 @@
 # cors
 
-plugin:https://cors-anywhere.herokuapp.com/
+plugin: https://cors-anywhere.herokuapp.com/
 
 - for api call to avoid cors Error
 
@@ -35,5 +35,7 @@ plugin:https://cors-anywhere.herokuapp.com/
 -Styling UI using Tailwinid
 
 # Using Redux
+
+-state management
 
 - cart add and clear
