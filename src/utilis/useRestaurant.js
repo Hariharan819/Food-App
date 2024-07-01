@@ -8,7 +8,7 @@ const useRestaurantmenu = (resId) => {
   }, []);
   const fetchmenuApi = async () => {
     const api_data = await fetch(
-      "https://cors-anywhere.herokuapp.com/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.4614624&lng=78.1854772&restaurantId=" +
+      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.4614624&lng=78.1854772&restaurantId=" +
         resId +
         "&catalog_qa=undefined&submitAction=ENTER"
     );
