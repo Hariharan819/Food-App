@@ -11,9 +11,6 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./ReduxUtilis/appStore";
 import Cartpage from "./Components/CartPage";
-
-const About = lazy(() => import("./Components/About"));
-
 const AppLayout = () => {
   return (
     <Provider store={appStore}>
@@ -35,11 +32,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/About",
-        element: (
-          <Suspense fallback={<h1>Loading.....</h1>}>
-            <About />
-          </Suspense>
-        ),
+        element: <About />,
       },
       {
         path: "/Contactus",
@@ -50,9 +43,9 @@ const appRouter = createBrowserRouter([
         element: <Restaurantmenu />,
       },
       {
-        path:"/Cartpage",
-        element:<Cartpage/>
-      }
+        path: "/Cartpage",
+        element: <Cartpage />,
+      },
     ],
     errorElement: <Error />,
   },
