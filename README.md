@@ -1,7 +1,5 @@
 # cors
 
-plugin: https://cors-anywhere.herokuapp.com/
-
 - for api call to avoid cors Error
 
 # Hooks
