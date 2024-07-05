@@ -1,4 +1,4 @@
-import RestaurantCards, { higherordercomponent } from "./RestaurantCards";
+import RestaurantCards from "./RestaurantCards";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 // import { Swiggy_data } from "../utilis/constant";
