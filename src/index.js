@@ -5,7 +5,7 @@ import Body from "./Components/Body";
 import Contactus from "./Components/Contactus";
 import About from "./Components/About";
 import Error from "./Components/Error";
-import { lazy, Suspense } from "react";
+// import { lazy, Suspense } from "react";
 import Restaurantmenu from "./Components/Restaurantmenu";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
