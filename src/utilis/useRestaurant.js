@@ -13,7 +13,7 @@ const useRestaurantmenu = (resId) => {
         "&catalog_qa=undefined&submitAction=ENTER",
       {
         headers: {
-          "x-cors-api-key": "temp_2e3422c183d29d444b047f686158cd47",
+          "x-cors-api-key": "temp_ce4e7e9521332fcbcde2d9bb53ac8dd4",
         },
       }
     );
@@ -24,4 +24,3 @@ const useRestaurantmenu = (resId) => {
   return resinfo;
 };
 export default useRestaurantmenu;
-
