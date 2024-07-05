@@ -9,7 +9,7 @@ const Body = () => {
   const [LiofRestaurant, setLiofRestaurant] = useState(null);
   const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setsearchText] = useState("");
-  const highercompo = higherordercomponent(RestaurantCards); //higher order function
+  // const highercompo = higherordercomponent(RestaurantCards); //higher order function
   useEffect(() => {
     fetchData();
   }, []);
