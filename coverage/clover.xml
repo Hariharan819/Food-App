@@ -1,17 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1721028547450" clover="3.2.0">
-  <project timestamp="1721028547451" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2"/>
-    <file name="About.js" path="D:\Food App\src\Components\About.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-    </file>
-    <file name="Userclass.js" path="D:\Food App\src\Components\Userclass.js">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-    </file>
+<coverage generated="1721030106707" clover="3.2.0">
+  <project timestamp="1721030106707" name="All files">
+    <metrics statements="28" coveredstatements="23" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="7" elements="42" coveredelements="31" complexity="0" loc="28" ncloc="28" packages="3" files="7" classes="7"/>
+    <package name="Components">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
+      <file name="About.js" path="D:\Food App\src\Components\About.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="Header.js" path="D:\Food App\src\Components\Header.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="Userclass.js" path="D:\Food App\src\Components\Userclass.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReduxUtilis">
+      <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="appStore.js" path="D:\Food App\src\ReduxUtilis\appStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="cartSlice.js" path="D:\Food App\src\ReduxUtilis\cartSlice.js">
+        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utilis">
+      <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="constant.js" path="D:\Food App\src\utilis\constant.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="useonlinestatus.js" path="D:\Food App\src\utilis\useonlinestatus.js">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
