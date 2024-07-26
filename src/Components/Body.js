@@ -19,11 +19,18 @@ const Body = () => {
       "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.4614624&lng=78.1854772&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
       {
         headers: {
-          "x-cors-api-key": "temp_8eb6cfbe5c51105a1e5407cdff3024e5",
+          "x-cors-api-key": "temp_5187d74575b1312666e7506b063e50e9",
         },
       }
     );
-    const json = await data.json();
+
+
+  //  fetch('https://proxy.cors.sh/https://acme.com', {
+  // headers: {
+  //   'x-cors-api-key': 'temp_5187d74575b1312666e7506b063e50e9'
+  //   }
+  // })
+  const json = await data.json();
 
     setLiofRestaurant(
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
