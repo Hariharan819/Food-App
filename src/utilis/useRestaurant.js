@@ -13,7 +13,7 @@ const useRestaurantmenu = (resId) => {
         "&catalog_qa=undefined&submitAction=ENTER",
       {
         headers: {
-          "x-cors-api-key": "temp_ce4e7e9521332fcbcde2d9bb53ac8dd4",
+          "x-cors-api-key": "temp_8eb6cfbe5c51105a1e5407cdff3024e5",
         },
       }
     );

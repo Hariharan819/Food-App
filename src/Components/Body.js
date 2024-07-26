@@ -19,7 +19,7 @@ const Body = () => {
       "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.4614624&lng=78.1854772&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
       {
         headers: {
-          "x-cors-api-key": "temp_ce4e7e9521332fcbcde2d9bb53ac8dd4",
+          "x-cors-api-key": "temp_8eb6cfbe5c51105a1e5407cdff3024e5",
         },
       }
     );
