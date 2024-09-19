@@ -19,28 +19,29 @@ const Body = () => {
       "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.4614624&lng=78.1854772&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
       {
         headers: {
-          "x-cors-api-key": "temp_5187d74575b1312666e7506b063e50e9",
+          "x-cors-api-key": "temp_4a5f229b8b0d91580a9c7c02867aa00b",
         },
       }
     );
 
-
-  //  fetch('https://proxy.cors.sh/https://acme.com', {
-  // headers: {
-  //   'x-cors-api-key': 'temp_5187d74575b1312666e7506b063e50e9'
-  //   }
-  // })
-  const json = await data.json();
+    //  fetch('https://proxy.cors.sh/https://acme.com', {
+    // headers: {
+    //   'x-cors-api-key': 'temp_5187d74575b1312666e7506b063e50e9'
+    //   }
+    // })
+    //https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.4614624&lng=78.1854772&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
+    //https://www.swiggy.com/mapi/homepage/getCards?lat=11.4614624&lng=78.1854772
+    const json = await data.json();
 
     setLiofRestaurant(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurant(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     // console.log(
-    // json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    // );
+    // json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    console.log(json?.data);
   };
   const onlinestatus = useonlinestatus();
   if (onlinestatus == false)
