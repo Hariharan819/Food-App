@@ -1,3 +1,5 @@
+## Deployed link https://food-app-04v8.onrender.com/
+
 # cors
 
 - for api call to avoid cors Error
@@ -37,4 +39,3 @@
 -state management
 
 - cart add and clear
-
